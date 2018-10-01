@@ -649,7 +649,7 @@ MonoBehaviour:
   min_distance: 0.1
   time_to_target: 0.25
   circle_distance: 2
-  angle_change: 10
+  angle_change: 40
 --- !u!1 &231449034
 GameObject:
   m_ObjectHideFlags: 0
