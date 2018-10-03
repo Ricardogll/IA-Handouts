@@ -114,6 +114,21 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &35233793 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 198852, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
+  m_PrefabInternal: {fileID: 1256386152}
+--- !u!114 &35233811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 35233793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8e39bc087653b34c9a42dec62b37d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &38034632
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,7 +920,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: f698f69d64c51f8438d853e5c274e5fc, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f698f69d64c51f8438d853e5c274e5fc, type: 3}
@@ -1407,7 +1422,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e307cb54b57a59342868ad47d1ed0c30, type: 3}
       propertyPath: m_Layer
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e307cb54b57a59342868ad47d1ed0c30, type: 3}
@@ -2463,6 +2478,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
+      propertyPath: falloff.m_Curve.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 412004, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2505,11 +2524,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11499750, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11428332, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
       propertyPath: m_Enabled
@@ -2517,7 +2536,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11444714, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11428332, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
       propertyPath: radius
@@ -2577,7 +2596,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11499750, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
       propertyPath: mask.m_Bits
-      value: 1280
+      value: 1024
       objectReference: {fileID: 0}
     - target: {fileID: 22455742, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -2626,6 +2645,54 @@ Prefab:
     - target: {fileID: 11499750, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
       propertyPath: falloff.m_Curve.Array.data[1].outWeight
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473662, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
+      propertyPath: falloff.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
+      propertyPath: falloff.m_Curve.Array.data[1].value
+      value: 0.00399479
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
+      propertyPath: falloff.m_Curve.Array.data[1].inSlope
+      value: -0.021642163
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
+      propertyPath: falloff.m_Curve.Array.data[1].outSlope
+      value: -0.021642163
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
+      propertyPath: falloff.m_Curve.Array.data[0].time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
+      propertyPath: falloff.m_Curve.Array.data[0].value
+      value: 0.9999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
+      propertyPath: falloff.m_Curve.Array.data[1].inWeight
+      value: 0.16777152
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
+      propertyPath: falloff.m_Curve.Array.data[0].inSlope
+      value: -3.1356578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
+      propertyPath: falloff.m_Curve.Array.data[0].outSlope
+      value: -3.1356578
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
+      propertyPath: falloff.m_Curve.Array.data[0].outWeight
+      value: 0.062626265
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454982, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
+      propertyPath: mask.m_Bits
+      value: 2048
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11427684, guid: 77aab66f3904942bab33067e31d9d228, type: 2}
@@ -3500,8 +3567,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 2048
   avoid_distance: 5
+  rays:
+    origin: {x: 0, y: 0, z: 0}
+    direction: {x: 0, y: 0, z: 0}
+    length: 0
+  falloff:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  speed_multiplier: 1
+  aux: {x: 0, y: 0, z: 0}
 --- !u!1 &1621344713
 GameObject:
   m_ObjectHideFlags: 0
